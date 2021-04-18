@@ -5,7 +5,7 @@
             <div class="col-md-3">
                 <div class="card">
                     <div class="card-body">
-                        <img src="{{ $user->image ? $user->image:'https://picsum.photos/50/50' }}" width="85" class="rounded-circle justify-content-end">
+                        <img src="{{ $user->image ? $user->image:'https://picsum.photos/50/50' }}" width="85" class="rounded-circle">
                         @if($user->id==\Auth::user()->id)
                         <form action="{{ url('/profile') }}" method="post" enctype="multipart/form-data">
                             @csrf
